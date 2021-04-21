@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Post from "./Post"
+import PostContainer from './PostContainer'
+
 
 function Feed() {
     const [posts, setPosts] =useState([])
@@ -12,13 +13,11 @@ function Feed() {
             })
     }, [])
 
-    const postComponents = posts.map((post) => {
-        return( 
-            <Post posts={posts}/>
-        )
-    })
+ 
     return (
-        <div>{postComponents}</div>
+        <div>
+        <PostContainer posts={posts}/>
+        </div>
     )
 }
 
