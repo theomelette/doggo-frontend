@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import OnePost from './OnePost'
 
 function PostsContainer({ posts }) {
    
+
+    // const [deletePosts, setDeletePosts] = useState([])
+
+    // function handleDeleteClick(id) {
+
+    //     fetch(`http://localhost:3000/posts/${id}`, {
+    //         method: "DELETE",
+    //     })
+    //     .then((r) => r.json())
+    //     .then(() => {
+    //         const updatedPosts = deletePosts.filter((p) => p.id !== id)
+    //         setDeletePosts(updatedPosts)
+    //     })
+    // }
 
     const allPosts = posts.map((post) => {
         return (
@@ -15,8 +29,10 @@ function PostsContainer({ posts }) {
                 message={post.message}
                 profilesrc={post.profilesrc}
                 image={post.Postimage}
+                // onDeleteClick={handleDeleteClick}
                 />
                 <button>Add New Post</button>
+                <button >Delete Post</button>
             </div>
         )
     })

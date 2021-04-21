@@ -16,7 +16,7 @@ function Feed() {
  
     return (
         <div>
-        <PostContainer posts={posts}/>
+        <PostContainer posts={posts} />
         </div>
     )
 }
