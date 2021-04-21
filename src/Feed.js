@@ -3,7 +3,7 @@ import PostContainer from './PostContainer'
 
 
 function Feed() {
-    const [posts, setPosts] =useState([])
+    const [posts, setPosts] = useState([])
 
     useEffect(()=> {
         fetch("http://localhost:3001/posts")
@@ -13,10 +13,20 @@ function Feed() {
             })
     }, [])
 
+    function handleDeletePost(id) {
+        const updatedPostsArray = posts.filter(posts => posts.id !== id)
+        setPosts(updatedPostsArray)
+        
+    }
  
+    function handleAddPost(newPost) {
+        const updatedPostsArray = [...posts, newPost]
+        setPosts(updatedPostsArray)
+    }
+
     return (
         <div>
-        <PostContainer posts={posts} />
+        <PostContainer key={posts.id} posts={posts} onDeletePost={handleDeletePost} onAddPost={handleAddPost}/>
         </div>
     )
 }

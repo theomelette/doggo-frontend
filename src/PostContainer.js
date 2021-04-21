@@ -1,35 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import OnePost from './OnePost'
 
-function PostsContainer({ posts }) {
-   
-
-    // const [deletePosts, setDeletePosts] = useState([])
-
-    // function handleDeleteClick(id) {
-
-    //     fetch(`http://localhost:3000/posts/${id}`, {
-    //         method: "DELETE",
-    //     })
-    //     .then((r) => r.json())
-    //     .then(() => {
-    //         const updatedPosts = deletePosts.filter((p) => p.id !== id)
-    //         setDeletePosts(updatedPosts)
-    //     })
-    // }
-
+function PostsContainer({posts, onDeletePost }) {
+ 
     const allPosts = posts.map((post) => {
         return (
             <div>
             <OnePost
-                key={post.id}
                 post={post}
+                key={post.id}
                 username={post.username}
                 title={post.title}
                 message={post.message}
                 profilesrc={post.profilesrc}
                 image={post.Postimage}
-                // onDeleteClick={handleDeleteClick}
+                onDeletePost={onDeletePost}
                 />
                 <button>Add New Post</button>
                 <button >Delete Post</button>

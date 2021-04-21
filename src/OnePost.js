@@ -1,18 +1,20 @@
 import React from 'react'
 
-function OnePost({post}){
+function OnePost({post, onDeletePost}){
     
-    
-    // function handleDeleteClick({onDeleteClick,id}) {
-    //     onDeleteClick(id)
-    // }
+function handleDelete() {
+    fetch(`http://localhost:3001/posts/${post.id}`, {
+        method: "DELETE",
+    })
+  onDeletePost(post.id)
+}
 
     return (
-        <div>
+        <div >
             <h4>Username: {post.username}</h4>
             <h3>Title: {post.title}</h3>
             <p>Message: {post.message}</p>
-          <button >Delete</button>
+          <button onClick={handleDelete}>Delete</button>
         </div>
     )
 
