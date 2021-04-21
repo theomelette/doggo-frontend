@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import PostContainer from './PostContainer'
+import NewPostForm from './NewPostForm'
 
 
 function Feed() {
@@ -18,7 +19,6 @@ function Feed() {
         setPosts(updatedPostsArray)
         
     }
- 
     function handleAddPost(newPost) {
         const updatedPostsArray = [...posts, newPost]
         setPosts(updatedPostsArray)
