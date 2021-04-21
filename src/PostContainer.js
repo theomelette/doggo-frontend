@@ -6,6 +6,7 @@ function PostsContainer({ posts }) {
 
     const allPosts = posts.map((post) => {
         return (
+            <div>
             <OnePost
                 key={post.id}
                 post={post}
@@ -15,6 +16,8 @@ function PostsContainer({ posts }) {
                 profilesrc={post.profilesrc}
                 image={post.Postimage}
                 />
+                <button>Add New Post</button>
+            </div>
         )
     })
     

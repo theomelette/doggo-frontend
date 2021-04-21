@@ -3,9 +3,9 @@ import React from 'react'
 function OnePost({post}){
     return (
         <div>
-            <h1>{post.username}</h1>
-            <h2>{post.title}</h2>
-            <p>{post.message}</p>
+            <h1>Username: {post.username}</h1>
+            <h2>Title: {post.title}</h2>
+            <p>Message: {post.message}</p>
           
         </div>
     )
