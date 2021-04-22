@@ -17,7 +17,6 @@ function PostsContainer({posts, onDeletePost }) {
                 onDeletePost={onDeletePost}
                 />
                 <button>Add New Post</button>
-                <button >Delete Post</button>
             </div>
         )
     })
