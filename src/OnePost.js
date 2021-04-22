@@ -15,6 +15,7 @@ function handleDelete() {
             <h3>Title: {post.title}</h3>
             <p>Message: {post.message}</p>
           <button onClick={handleDelete}>Delete</button>
+          <button>Edit</button>
         </div>
     )
 

@@ -26,9 +26,9 @@ function NewPostForm( { onAddPost }) {
 
     return (
         <form onSubmit={handleSubmit} className="new-post-form">
-            <input placeholder={title} onChange={(e) => setTitle(e.target.value)} />
-            <input placeholder={username} onChange={(e) => setUsername(e.target.value)} />
-            <textarea placeholder={message} onChange={(e) => setMessage(e.target.value)} />
+            <input placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
+            <input placeholder="Title" onChange={(e) => setTitle(e.target.value)} />
+            <textarea placeholder="Message" onChange={(e) => setMessage(e.target.value)} />
             <input type="submit" value="New Post" />
         </form>
     )

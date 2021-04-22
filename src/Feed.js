@@ -23,7 +23,7 @@ function Feed() {
         const updatedPostsArray = [...posts, newPost]
         setPosts(updatedPostsArray)
     }
-
+    
     return (
        <> 
         <div>
