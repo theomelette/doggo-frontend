@@ -16,7 +16,7 @@ function PostsContainer({posts, onDeletePost }) {
                 image={post.Postimage}
                 onDeletePost={onDeletePost}
                 />
-                <button>Add New Post</button>
+                {/* <button>Add New Post</button> */}
             </div>
         )
     })
