@@ -1,7 +1,7 @@
 import React from 'react'
 import OnePost from './OnePost'
 
-function PostsContainer({posts, onDeletePost }) {
+function PostsContainer({posts, onDeletePost, handleUpdatedPost }) {
  
     const allPosts = posts.map((post) => {
         return (
@@ -15,6 +15,7 @@ function PostsContainer({posts, onDeletePost }) {
                 profilesrc={post.profilesrc}
                 image={post.Postimage}
                 onDeletePost={onDeletePost}
+                handleUpdatedPost={handleUpdatedPost}
                 />
                 {/* <button>Add New Post</button> */}
             </div>

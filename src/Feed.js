@@ -23,11 +23,21 @@ function Feed() {
         const updatedPostsArray = [...posts, newPost]
         setPosts(updatedPostsArray)
     }
+
+    function handleUpdatedPost(updatedNewPost) {
+        const updatedPost = posts.map(post => {
+            if (post.id === updatedNewPost.id ) return updatedNewPost
+            
+            return post
+        })
+
+        setPosts(updatedPost)
+    }
     
     return (
        <> 
         <div>
-        <PostContainer key={posts.id} posts={posts} onDeletePost={handleDeletePost} onAddPost={handleAddPost}/>
+        <PostContainer key={posts.id} posts={posts} onDeletePost={handleDeletePost} handleUpdatedPost={handleUpdatedPost} onAddPost={handleAddPost}/>
         </div>
         <div><NewPostForm onAddPost={handleAddPost}/></div>
         </>  
