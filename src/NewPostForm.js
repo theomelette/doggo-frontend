@@ -30,7 +30,7 @@ function NewPostForm( { onAddPost }) {
             <input placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
             <input placeholder="Title" onChange={(e) => setTitle(e.target.value)} />
             <textarea placeholder="Message" onChange={(e) => setMessage(e.target.value)} />
-            <input type="submit" value="New Post" />
+            <input className="form-submit" type="submit" value="New Post" />
         </form>
     )
 }

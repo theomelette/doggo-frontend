@@ -24,8 +24,9 @@
 }
 
 .post-card > button {
-  color:rgb(13, 93, 162);
-  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75)
+  color:rgb(218, 17, 20);
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+  float: right;
 }
 
 .post-card {
@@ -35,4 +36,11 @@
   background-color: #fff;
   box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
   cursor:pointer;
+  
+}
+
+.post-card > h6 {
+  font-weight: lighter;
+  font-style: italic;
+  float: left;
 }

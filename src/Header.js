@@ -10,8 +10,10 @@ function Header() {
             <div className="header_buttons">
             < Link to="/pictures">Pictures</Link> <br>
             </br>
+            <br></br>
             < Link to="/friends">Friends</Link> 
             </div>
+            <img src="https://i.pinimg.com/originals/30/cb/ad/30cbadfc1551e3dfbbd9d2a70b025528.png"></img>
             <h1>Welcome to DogGO!</h1>
         </div>
     </div>

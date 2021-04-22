@@ -13,13 +13,15 @@ function OnePost({post, onDeletePost, handleUpdatedPost}){
 
 
     return (
+      <>
         <div className="post-card">
-            <h2>Title: {post.title}</h2>
-            <p>Message: {post.message}</p>
-            <h6>Username: {post.username}</h6>
+            <h2>{post.title}</h2>
+            <p>{post.message}</p>
+            <h6>{post.username}</h6>
           <button onClick={handleDelete}>Delete</button>
           <EditPostForm post={post} handleUpdatedPost={handleUpdatedPost}/>
         </div>
+      </>
     )
 
 }

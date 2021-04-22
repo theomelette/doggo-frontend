@@ -16,3 +16,10 @@
     align-items: center;
     padding: 10px 20px;
 }
+
+.header > img {
+  object-fit: scale-down;
+  max-width: 25%;
+  align-items: center;
+  height:auto;
+}
