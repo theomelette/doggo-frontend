@@ -10,9 +10,7 @@ function App() {
       <div>
         <Header />
       </div>
-      <div>
-        <NewPostForm />
-      </div>
+      
       <div>
         <Feed />
       </div>

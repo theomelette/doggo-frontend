@@ -25,9 +25,12 @@ function Feed() {
     }
 
     return (
+       <> 
         <div>
         <PostContainer key={posts.id} posts={posts} onDeletePost={handleDeletePost} onAddPost={handleAddPost}/>
         </div>
+        <div><NewPostForm onAddPost={handleAddPost}/></div>
+        </>  
     )
 }
 
