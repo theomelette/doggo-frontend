@@ -1,0 +1,38 @@
+.post-card > h6 {
+  align-items: center;
+  text-justify: distribute;
+  color: rgb(13, 93, 162);
+}
+
+.post-card > h2 {
+  align-items: flex-end;
+  color: rgb(13, 93, 162);
+  text-justify: distribute;
+}
+
+.post-card > form {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+
+  position: sticky;
+  background-color: #fff;
+  z-index: 100;
+
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.post-card > button {
+  color:rgb(13, 93, 162);
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75)
+}
+
+.post-card {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+  cursor:pointer;
+}

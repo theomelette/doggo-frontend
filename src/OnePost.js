@@ -1,5 +1,6 @@
 import React from 'react'
 import EditPostForm from './EditPostForm'
+import './OnePost.css'
 
 function OnePost({post, onDeletePost, handleUpdatedPost}){
     
@@ -12,10 +13,10 @@ function OnePost({post, onDeletePost, handleUpdatedPost}){
 
 
     return (
-        <div >
-            <h4>Username: {post.username}</h4>
-            <h3>Title: {post.title}</h3>
+        <div className="post-card">
+            <h2>Title: {post.title}</h2>
             <p>Message: {post.message}</p>
+            <h6>Username: {post.username}</h6>
           <button onClick={handleDelete}>Delete</button>
           <EditPostForm post={post} handleUpdatedPost={handleUpdatedPost}/>
         </div>

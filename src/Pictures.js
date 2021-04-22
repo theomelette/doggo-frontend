@@ -2,7 +2,7 @@ import React from 'react'
 
 function Pictures(){
     return(
-        <p>Pictures go here</p>
+        <p>Get out and take some pics! You have zero!</p>
     )
 }
 

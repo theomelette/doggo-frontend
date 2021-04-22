@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './NewPostForm.css'
 
 function NewPostForm( { onAddPost }) {
     const [title, setTitle] = useState("")

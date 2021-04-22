@@ -6,6 +6,7 @@ import Pictures from "./Pictures"
 import Friends from "./Friends"
 import { Switch, Route, Link } from "react-router-dom";
 import posts from "./PostContainer"
+import NewPostForm from './NewPostForm';
 
 
 function App() {
@@ -16,10 +17,8 @@ function App() {
           <Header />
     
           <Feed />
-  
-          <Pictures />
-    
-          <Friends />
+          
+          {/* <NewPostForm /> */}
      
        
       </div>

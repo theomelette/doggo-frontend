@@ -4,6 +4,7 @@ import NewPostForm from './NewPostForm'
 import Pictures from "./Pictures"
 import Friends from "./Friends"
 import { Switch, Route, Link } from "react-router-dom";
+import "./Feed.css"
 
 
 
@@ -24,7 +25,7 @@ function Feed() {
         
     }
     function handleAddPost(newPost) {
-        const updatedPostsArray = [...posts, newPost]
+        const updatedPostsArray = [ newPost,...posts]
         setPosts(updatedPostsArray)
     }
 
@@ -40,11 +41,11 @@ function Feed() {
     
     return (
        
-        <div>
+        <div className="feed">
              <Switch>
            <Route exact path="/">
-        <PostContainer key={posts.id} posts={posts} onDeletePost={handleDeletePost} handleUpdatedPost={handleUpdatedPost} onAddPost={handleAddPost}/>  </Route>
         <NewPostForm onAddPost={handleAddPost}/>
+        <PostContainer key={posts.id} posts={posts} onDeletePost={handleDeletePost} handleUpdatedPost={handleUpdatedPost} onAddPost={handleAddPost}/>  </Route>
        
 
         <Route exact path="/pictures">

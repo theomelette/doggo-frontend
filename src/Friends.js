@@ -3,7 +3,7 @@ import React from 'react'
 
 function Friends(){
     return(
-        <p>Friends go here</p>
+        <p>No friends? What are you a software developer?</p>
     )
 }
 
