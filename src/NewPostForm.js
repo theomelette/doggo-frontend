@@ -16,6 +16,7 @@ function NewPostForm( { onAddPost }) {
                 title: title,
                 message: message,
                 username: username,
+                user_id: 1
             })
         })
             .then(r => r.json())
