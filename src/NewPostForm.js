@@ -22,16 +22,23 @@ function NewPostForm( { onAddPost }) {
         })
             .then(r => r.json())
             .then((newPost) => onAddPost(newPost))
+            
+            setUsername('')
+            setMessage('')
+            setTitle('')
     }
+        
 
 
     return (
-        <form onSubmit={handleSubmit} className="new-post-form">
-            <input placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
-            <input placeholder="Title" onChange={(e) => setTitle(e.target.value)} />
-            <textarea placeholder="Message" onChange={(e) => setMessage(e.target.value)} />
-            <input className="form-submit" type="submit" value="New Post" />
-        </form>
+        <>
+            <form onSubmit={handleSubmit} className="new-post-form">
+                <input placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+                <input placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
+                <textarea placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
+                <input className="form-submit" type="submit" value="New Post" />
+            </form>
+        </>
     )
 }
 

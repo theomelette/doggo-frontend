@@ -36,11 +36,12 @@
   background-color: #fff;
   box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
   cursor:pointer;
+  font-family:Arial, Helvetica, sans-serif;
   
 }
 
 .post-card > h6 {
   font-weight: lighter;
   font-style: italic;
-  float: left;
+  float: inline-start;
 }

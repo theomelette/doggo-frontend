@@ -29,13 +29,16 @@ const [editMessage, setEditMessage] = useState(post.message)
         })
             .then(r => r.json())
             .then((newPost) => handleUpdatedPost(newPost))
+
+            setEditTitle('')
+            setEditMessage('')
     }
 
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" onChange={handleTitleChange} value={editTitle} />
             <textarea onChange={handleMessageChange} value={editMessage}/>
-            <button type="submit">Edit Post</button>
+            <button style= {{color:"rgb(13, 93, 162)"}} type="submit">Edit Post</button>
         </form>
        
     )

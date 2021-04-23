@@ -2,7 +2,6 @@
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
-
   position: sticky;
   background-color: #fff;
   z-index: 100;
@@ -23,3 +22,4 @@
   align-items: center;
   height:auto;
 }
+

@@ -25,7 +25,7 @@ function Feed() {
         
     }
     function handleAddPost(newPost) {
-        const updatedPostsArray = [ newPost,...posts]
+        const updatedPostsArray = [ newPost, ...posts]
         setPosts(updatedPostsArray)
     }
 
